@@ -1,7 +1,7 @@
 import java.io.*;
 import java.net.*;
 public class Client {
-    Thread r1,r2;
+    
     BufferedReader br;
     PrintWriter out;
     Socket socket;
@@ -33,7 +33,7 @@ public class Client {
         /* thread
         for writing
          */
-        Runnable r1=()->{
+        Runnable r2=()->{
             while(true){
                 try{
                     BufferedReader b1=new BufferedReader(new InputStreamReader(System.in));
